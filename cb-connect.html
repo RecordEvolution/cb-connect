@@ -11,7 +11,7 @@ Example:
       <template>
         <cb-connect on-crossbar-connected="eventHandler"></cb-connect>
       </template>
-    
+
       <script>
         Polymer({
 
@@ -52,12 +52,12 @@ Instead of listening to the event, you could also add an observer for the sessio
         //crossbar realm
         realm: {
           type: String,
-          value: 'polymer_meetup'
+          value: 'realm1'
         },
         //websocket uri
         wsuri: {
           type: String,
-          value: 'ws://localhost:8099/ws'
+          value: 'ws://localhost:8080/ws'
         },
         // crossbar session object
         session: {
