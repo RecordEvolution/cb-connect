@@ -27,9 +27,6 @@ Example:
       </script>
     </dom-module>
 
-Instead of listening to the event, you could also add an observer for the session object.
-
-
 @demo demo/index.html 
 -->
 
@@ -58,11 +55,6 @@ Instead of listening to the event, you could also add an observer for the sessio
         wsuri: {
           type: String,
           value: 'ws://localhost:8080/ws'
-        },
-        // crossbar session object
-        session: {
-          type: Object,
-          notify: true
         }
       },
 
@@ -86,7 +78,6 @@ Instead of listening to the event, you could also add an observer for the sessio
                 // absession = session;
 
                 me.fire('crossbar-connected', session);
-                me.session = session;
 
             };
 
