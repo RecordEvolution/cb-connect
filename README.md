@@ -10,7 +10,7 @@ Example:
 ```html
 <dom-module id="custom-element">
   <template>
-    <cb-connect on-crossbar-connected="eventHandler"></cb-connect>
+    <cb-connect on-crossbar-connected="getSessionObject"></cb-connect>
   </template>
 
   <script>
@@ -20,7 +20,7 @@ Example:
 
       },
 
-      eventHandler: function(e) {
+      getSessionObject: function(e) {
         console.log('connected, the session object is:', e.detail);
       }
 
